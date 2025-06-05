@@ -1,4 +1,6 @@
-🧠 AI Medical Chatbot
+## 🧠 AI Medical Chatbot
+
+
 An intelligent and interactive AI-powered chatbot designed to provide general medical information and assist users with basic health-related queries. This project leverages natural language processing and vector-based memory to simulate human-like conversation in the healthcare domain.
 
 📌 Features
