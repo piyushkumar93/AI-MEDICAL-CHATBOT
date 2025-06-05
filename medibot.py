@@ -1,4 +1,6 @@
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 import streamlit as st
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
@@ -20,6 +22,7 @@ HF_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 DB_FAISS_PATH="vectorstore/db_faiss"
 @st.cache_resource
 def get_vectorstore():
+    os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
     embedding_model=HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
     db=FAISS.load_local(DB_FAISS_PATH, embedding_model, allow_dangerous_deserialization=True)
     return db
