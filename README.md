@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README: Setting Up Your Environment with Pipenv
 
 ## Prerequisite: Install Pipenv
@@ -18,3 +19,6 @@ pipenv install streamlit
 
 
 
+=======
+# AI-MEDICAL-CHATBOT
+>>>>>>> 52feca51f3fd068f5b5b0264cfba305a07e28089
