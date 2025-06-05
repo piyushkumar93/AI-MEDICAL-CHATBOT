@@ -22,22 +22,15 @@ HF_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 DB_FAISS_PATH="vectorstore/db_faiss"
 @st.cache_resource
 @st.cache_resource
+@st.cache_resource
 def get_vectorstore():
-    import torch
-    import os
-    os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU
-
-    # Force PyTorch to use CPU if used internally
-    if torch.cuda.is_available():
-        torch.device("cpu")
-
     embedding_model = HuggingFaceEmbeddings(
         model_name='sentence-transformers/all-MiniLM-L6-v2',
-        model_kwargs={"device": "cpu"}  # <<< Key line
+        model_kwargs={"device": "cpu"}  # <== THIS LINE FIXES THE ERROR
     )
-
     db = FAISS.load_local(DB_FAISS_PATH, embedding_model, allow_dangerous_deserialization=True)
     return db
+
 
 
 
