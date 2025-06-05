@@ -1,82 +1,53 @@
-## 🧠 AI Medical Chatbot
+# AI Medical Chatbot
 
+A conversational AI-powered chatbot that provides general medical assistance using natural language processing (NLP) and vector-based memory retrieval. This tool is designed for educational and prototyping purposes, simulating doctor-patient interactions with secure and modular code.
 
-An intelligent and interactive AI-powered chatbot designed to provide general medical information and assist users with basic health-related queries. This project leverages natural language processing and vector-based memory to simulate human-like conversation in the healthcare domain.
+👉 **[Try the Live Demo](https://ai-medical-chatbot1.streamlit.app/)**
 
-📌 Features
-✅ Conversational AI: Interacts with users in natural language to address medical-related questions.
+---
 
-🧬 Medical Memory Integration: Uses vector stores to retain and retrieve relevant information efficiently.
+## 📌 Overview
 
-🔐 Secure & Modular: .env file for managing sensitive tokens and environment variables.
+This chatbot answers health-related queries and provides basic medical information. It uses a combination of Hugging Face transformers, LangChain memory modules, and FAISS vector databases to create a memory-augmented, context-aware chatbot.
 
-📦 Lightweight & Extendable: Easily extend the chatbot with additional medical data or memory types.
+---
 
-💬 LangChain Integration: Makes use of LangChain and Hugging Face for advanced NLP tasks.
+## 🚀 Features
 
-🛠️ Tech Stack
-Technology	Description
-Python	Core programming language
-LangChain	Framework for building with LLMs
-Hugging Face	Language models for processing user queries
-FAISS	Vector database for semantic search
-OpenAI / Transformers	LLM support (optional)
-VS Code + Git	Development and version control
+- Natural language understanding for healthcare queries  
+- Memory-augmented conversation using FAISS vector store  
+- Easy integration with Hugging Face and OpenAI APIs  
+- Clean and modular Python code  
+- Web interface via Streamlit
 
-🧾 Setup Instructions
-1. Clone the Repository
+---
 
-git clone https://github.com/piyushkumar93/AI-MEDICAL-CHATBOT.git
-cd AI-MEDICAL-CHATBOT
+## ⚙️ Tech Stack
 
-2. Create a Virtual Environment
+- **Python 3.10+**
+- **Streamlit** – for building the web UI
+- **LangChain** – for memory and chaining logic
+- **FAISS** – for vector similarity search
+- **Transformers (Hugging Face)** – for NLP modeling
+- **dotenv** – for secure environment variable handling
 
-python -m venv venv
-source venv/bin/activate      # On Windows: venv\Scripts\activate
-
-3. Install Dependencies
-pip install -r requirements.txt
-
-5. Configure Environment Variables
-Create a .env file in the root directory:
-
-
-HUGGINGFACE_API_KEY=your_key_here
-OPENAI_API_KEY=your_key_here
-(This file is already added to .gitignore)
-
-5. Run the Bot
-python medibot.py
-
-
-📂 Project Structure
-
-medical-chatbot-main/
-│
-├── data/                       # Sample or medical text data
-├── vectorstore/db_faiss/      # Vector DB index files
-├── connect_memory_with_llm.py # Handles LangChain memory connection
-├── medibot.py                 # Main chatbot script
-├── .env                       # Environment variables (excluded in git)
-├── .gitignore
-├── README.md
-└── Pipfile / requirements.txt
+---
 
 🧠 Use Cases
-💬 Patient FAQs
+Symptom checker prototype
 
-🔍 Initial symptom checking
+Basic medical Q&A
 
-📚 Educational tool for medical awareness
+Medical education tool
 
-🏥 Triage automation prototype
+Early-stage triage simulation
 
 ⚠️ Disclaimer
-This chatbot is for educational and demonstrative purposes only. It does not provide professional medical advice. Always consult a licensed healthcare provider for medical concerns.
+This chatbot is NOT a replacement for professional medical advice.
+It is for educational and demonstration purposes only. Always consult a licensed doctor for real medical concerns.
 
-🙌 Contributions
-Contributions, suggestions, and improvements are welcome! Feel free to open issues or submit PRs.
-
-📬 Contact
-Created with ❤️ by PIYUSH KUMAR
+👤 Author
+Piyush Kumar
+GitHub
+Live Demo
 
