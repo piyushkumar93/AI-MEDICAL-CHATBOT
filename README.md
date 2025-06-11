@@ -2,7 +2,7 @@
 
 A conversational AI-powered chatbot that provides general medical assistance using natural language processing (NLP) and vector-based memory retrieval. This tool is designed for educational and prototyping purposes, simulating doctor-patient interactions with secure and modular code.
 
-👉 **[Try the Live Demo](https://ai-medical-chatbot1.streamlit.app/)**
+
 
 ---
 
