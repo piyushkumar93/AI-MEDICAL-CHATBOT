@@ -48,6 +48,7 @@ It is for educational and demonstration purposes only. Always consult a licensed
 
 👤 Author
 Piyush Kumar
+
 GitHub
-Live Demo
+
 
